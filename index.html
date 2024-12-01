@@ -8,158 +8,304 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Chango&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
     <title>About Avelina Garcia Wong</title>
   </head>
   <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-pink navbar-dark shadow-sm fixed-top">
-        <div class="container">
-          <a class="navbar-brand text-dark" href="#">Avelina</a>
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="gambar/icon.png" alt="icon" width="60" height="60">
+        </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link text-dark active" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="#portfolio">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="#contact">Contact</a>
-              </li>
-            </ul>
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="#education">Education</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="#project">Project</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="#contact">Contact</a>
+                  </li>
+              </ul>
           </div>
-        </div>
-      </nav>
-    <!-- Jumbotron -->
-    <div id="home"class="jumbotron text-center">
-      <img src="gambar1.jpg" alt="avel" width="200" class="rounded-circle img-thumbnail" style="margin-top: 100px;">
-      <h1 class="display-4">Avelina Garcia Wong</h1>
-      <p class="lead">Uni Student | Teacher</p>
-    </div>
+      </div>
+    </nav>
 
-    <!-- About -->
-    <section id="about">
-      <div class="container">
-        <div class="row text-center mb-5">
-          <div class="col">
-            <h2>About</h2>
+    <!-- Landing Section -->
+    <div class="landing" id="landingSection">
+      <video class="landvid" src="video/video.mp4" autoplay muted></video>
+  </div>
+
+  <!-- Main Website Content -->
+  <div class="website-content" id="mainContent">
+      <!-- Carousel -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-        </div>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="gambar/2.png" class="d-block w-100" alt="Slide 1">
+              </div>
+              <div class="carousel-item">
+                  <img src="gambar/1.png" class="d-block w-100" alt="Slide 2">
+              </div>
+              <div class="carousel-item">
+                  <img src="gambar/3.png" class="d-block w-100" alt="Slide 3">
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
       </div>
-      </div>
-        <div class="row justify-content-center text-center fs-5">
-            <div class="col-4">
-              <p>I have one year of experience as a preschool teacher, which has honed my passion and skills in education.  With one years of teaching experience, I am confident in my ability to contribute effectively to your academic team.</p>
+
+      <!-- About -->
+      <section id="about">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2>About Me</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center text-center fs-5">
+                <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+                    <div id="home" class="jumbotron">
+                        <img src="gambar/gambar1.jpg" alt="avel" width="200" class="img-thumbnail rounded-circle custom-circle">
+                    </div>
+                </div>
+                 <div class="col-md-3 " style="margin-left: 0px;">
+                    <h1 class="question"> FULL NAME</h1>
+                    <h1 class="display-4">Avelina Garcia Wong</h1>
+                    <h1 class="question"> E-MAIL</h1>
+                    <h1 class="display-4">avelinawong2@gmail.com</h1>
+                    <h1 class="question"> TELP. NUMBER</h1>
+                    <h1 class="display-4">081282026188</h1>
+                 </div>
+            <div class="row text-center mb-5 justify-content-center">
+                <div class="col-md-8 d-flex justify-content-center">
+                    <p class="intro">Hello, I am Avelina Garcia Wong.I am currently in my second year of pursuing a bachelor's degree in Information System at Universitas Pelita Harapan, and having a role to serve as Head of Department for External relation in HMPSSI.I have one year of experience as a preschool teacher, which has honed my passion and skills in education.  With one years of teaching experience, I am confident in my ability to contribute effectively to your academic team.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Education -->
+         <section id="education">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2>Education</h2>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>HIGH SCHOOL</h3>
+                        <p>Studied at W.R.Supratman High School, focusing on natural sciences.</p>
+                        <span class="timeline-date"> July 2020 - April 2023 </span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>CERTIFICATE</h3>
+                        <p>Completed a certification in Engslish from Royal Academy.</p>
+                        <span class="timeline-date">June 2023</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>BANCHELOR'S DEGREE</h3>
+                        <p>Pursuing a degree in Information System at Universitas Pelita Harapan.</p>
+                        <span class="timeline-date"> September 2023 - Present</span>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!-- skills -->
+        <section id="skills">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col">
+                        <h2>Skills</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center" style="height:600px; width:1000px; margin-left: 150px;">
+                    <div class="col-md-4 mb-3">
+                        <div class="progress" style="--percent: 85;">
+                            <div class="circle">
+                                <div class="inner-circle">
+                                    <span class="number">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                    <h4>HTML & CSS</h4>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="progress" style="--percent: 75;">
+                            <div class="circle">
+                                <div class="inner-circle">
+                                    <span class="number">75%</span>
+                                </div>
+                            </div>
+                        </div>
+                    <h4>Java</h4>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="progress" style="--percent: 90;">
+                            <div class="circle">
+                                <div class="inner-circle">
+                                    <span class="number">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                    <h4>Figma</h4>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="progress" style="--percent: 88;">
+                            <div class="circle">
+                                <div class="inner-circle">
+                                    <span class="number">88%</span>
+                                </div>
+                            </div>
+                        </div>
+                    <h4>Python</h4>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="progress" style="--percent: 80;">
+                            <div class="circle">
+                                <div class="inner-circle">
+                                    <span class="number">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    <h4>c++</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project -->
+        <section id="project">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col">
+                      <h2>Portfolio</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="card-group">
+                        <div class="card" style="width:80px; border-radius: 15px; border: 2px solid white; margin-left:40px; margin-right:40px;">
+                            <img src="gambar/election.png" class="card-img-top" alt="election" height="200px"style="border-radius: 15px; border: 2px solid white;">
+                            <div class="card-body">
+                            <h5 class="card-title">ONLINE PRESIDENT ELECTION </h5>
+                            <p class="card-text">Create an Online President Election System for Final Project</p>
+                            <button type="button" onclick="window.location.href='https://uph365-my.sharepoint.com/:f:/g/personal/03081230014_student_uph_edu/EngjthDiR5BJlgpm1Km-k3cBe5Uf0xIpyMsacAd-aiHqPg?e=1UApJi'"> Check here</button>
+                            
+                            </div>
+                        </div>
+                        <div class="card"style="width:80px; border-radius: 15px; border: 2px solid white; margin-left:40px; margin-right:40px;">
+                            <img src="gambar/gambar4.jpg" class="card-img-top" alt="dots" height="200px"style="border-radius: 15px; border: 2px solid white;">
+                            <div class="card-body">
+                            <h5 class="card-title">CREATIVE DIVISION</h5>
+                            <p class="card-text">Crete a fun and interactive game for DOTS 2024.</p>
+                            <button type="button" onclick="window.location.href='https://drive.google.com/drive/folders/1_LpccQPlumCzMIoG8HjfiE-JQF7Nww5q?usp=sharing'"> Check here</button>
+                            </div>
+                        </div>
+                        <div class="card" style="width:80px; border-radius: 15px; border: 2px solid white ; margin-left:40px; margoin-right:40px;">
+                            <img src="gambar/gambar5.jpg" class="card-img-top" alt="ictiia" height="200px"style="border-radius: 15px; border: 2px solid white ;">
+                            <div class="card-body">
+                            <h5 class="card-title">ICTIIA 2024</h5>
+                            <p class="card-text">Honored to be part of ICTIIA 2024 commitee</p>
+                            <button type="button" onclick="window.location.href='https://uph365-my.sharepoint.com/:b:/g/personal/03081230014_student_uph_edu/Ef6YziGVXs1Eltv5ZRs1u2oBYOmZF8onGl_mBYsKgkNsUw?e=2T7EEs'"> Check here</button>
+                            </div>
+                        </div>
+                        <div class="card" style="width:80px; border-radius: 15px; border: 2px solid white ; margin-left:40px; margoin-right:40px;">
+                            <img src="gambar/connectme.jpg" class="card-img-top" alt="connectme" height="200px"style="border-radius: 15px; border: 2px solid white;">
+                            <div class="card-body">
+                            <h5 class="card-title">CONNECT ME</h5>
+                            <p class="card-text">Create an app that can help individuals with autism improve their quality of life and reduce the social disparities they face."</p>
+                            <button type="button" onclick="window.location.href='https://youtu.be/JrT3VYWtfq0'"> Check here</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Bagian Form -->
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="object" class="form-label">Object</label>
+                            <input type="text" class="form-control" id="object">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send</button>
+                    </form>
+                </div>
+                <!-- Bagian Tulisan Contact -->
+                <div class="col-md-5 text-center">
+                    <h2>Contact Me</h2>
+                </div>
             </div>
         </div>
     </section>
-
-
-
     
-    <!-- Portfolio -->
-    <section id="portfolio">
-      <div class="container">
-        <div class="row text-center mb-5">
-          <div class="col">
-            <h2>Portfolio</h2>
-          </div>
-          <div  class="row justify-content-center">
-            <div class="col-md-4 mb-3">
-              <div class="card" style="width: 18rem;">
-                <img src="election.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text"> Create an Online President Election System.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card" style="width: 18rem;">
-                <img src="gambar6.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text"> Create a lesson plan for preschoolers and toodlers</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card" style="width: 18rem;">
-                <img src="gambar3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Create an ambassador campaign called Cleanscape</p>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-md-4 mb-3">
-              <div class="card" style="width: 18rem;">
-                <img src="gambar4.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Crete a fun and interactive game for DOTS 2024</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card" style="width: 18rem;">
-                <img src="gambar5.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text"> Honored to be part of ICTIIA 2024 commitee</p>
-                </div>
-              </div>
-            </div>
     
-            <div class="col-md-4 mb-3">
-              <div class="card" style="width: 18rem;">
-                <img src="gambar5.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text"> Honored to be part of INTECH 2024 commitee</p>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-      
-    </section>
-    
-    <!-- Contact -->
-    <section id ="contact">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col text-center">
-            <h2>Contact</h2>
-          </div>
-          <div  class="row justify-content-center">
-            <div class="col-md-6">
-              <form>
-                <div class="mb-3">
-                  <label for="nama" class="form-label">Nama Lengkap</label>
-                  <input type="text" class="form-control" id="nama">
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email Anda</label>
-                  <input type="email" class="form-control" id="email">
-                </div>
-                <div class="mb-3 form-check">
-                  <label for="pesan">Tinggalkan pesan Anda</label>
-                  <textarea class="form-control" id="pesan" row="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  </div>
 
-    <!-- Footer -->
-    <footer class="bg-pink text-dark text-center pb-5">
+  <!-- Footer -->
+  <footer class="bg-pink text-dark text-center py-3">
       <p>Created by Avelina Garcia Wong</p>
-    </footer>
+  </footer>
+
+  <script>
+    // Wait for the video to finish or a set timeout
+    setTimeout(() => {
+        document.getElementById('landingSection').classList.add('hidden');
+        document.getElementById('mainContent').classList.add('visible');
+    }, 1500); // 2.5 seconds delay
+  </script>    
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
 

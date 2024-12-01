@@ -1,21 +1,31 @@
 .bg-pink {
-    background-color: pink;
+    background:linear-gradient(#d9eaf1,#E7F6F9);
 }
 
-#about{
-    margin: 0;
-}
+
+.navbar .container {
+    margin-left: 50px;
+    margin-right: 50px; 
+  }
 
 body {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family:'Montserrat','Berkshire Swash',;
 }
 
 .navbar-brand{
-    font-size: 24px;
+    margin-left:50px;
 }
 
-.nav-item{
-    font-size: 18px;
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-link {
+    padding: 5px 0;
+}
+
+.navbar-nav {
+    margin-left: 650px; 
 }
 
 h2{
@@ -28,8 +38,496 @@ h2{
     color: white;
 }
 
-.wave {
-    width: 100%;
-    overflow: hidden;
+
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+.landing.hidden {
+    display: none;
+}
+.website-content {
+    display: none;
+}
+.website-content.visible {
+    display: block;
+}
+video.landvid {
+    max-width: 100%;
+    height: auto;
 }
 
+.custom-circle {
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover;
+    border-top: 5px solid pink;
+}
+
+.lead{
+    margin-top: 20px;
+    font-weight: bold;
+    font-family:'Open Sans';
+    color:#FFA2B8;
+}
+
+.question{
+    color:palevioletred;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    text-align: left;
+    font-weight: bold;
+}
+
+.display-4{
+    font-size: 20px;
+    font-family: 'Montserrat';
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.intro{
+    width:700px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+#about{
+    margin: 0;
+    background: linear-gradient(#EAF6FF,#C1E5FF,);
+}
+
+
+#education{
+    background:linear-gradient(#d9eaf1,#E7F6F9);
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+#education::after{
+    content: "";
+    position: absolute;
+    left: 870px;
+    transform: translateX(-50%); 
+    margin-top: 200px;
+    top: 0; 
+    height: 65%;
+    width: 8px;
+    background: linear-gradient( #FC72A5,#F99DBC,#FEC2D6);
+    border-radius: 50px;
+    animation:LineAnimated 5s linear forwards;
+}
+
+.educationtime{
+    text-align: center;
+    font-size: 80px;
+    font-family:'Berkshire Swash';
+    padding: 20px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+* Timeline Container */
+.timeline {
+    position: relative;
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    z-index: 1;
+}
+
+
+/* Timeline Item */
+.timeline-item {
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: fadeIn 0.6s ease-in forwards;
+}
+
+.timeline-item:nth-child(even) {
+    justify-content: flex-end;
+    transform: translateX(30px);
+}
+
+.timeline-item:nth-child(even)::before {
+    content: "";
+    position: absolute;
+    left: 850px;
+    transform: translateX(-50%);
+    top: 0; 
+    width: 30px;
+    height: 30px;
+    background:linear-gradient( #FC72A5,#F99DBC,#FEC2D6); 
+    border-radius: 50%; 
+
+}
+
+.timeline-item:nth-child(odd)::before {
+    content: "";
+    position: absolute;
+    left: 850px; 
+    transform: translateX(-50%); 
+    top: 0; 
+    width: 30px;
+    height: 30px;
+    background:linear-gradient( #FC72A5,#F99DBC,#FEC2D6); 
+    border-radius: 50%; 
+}
+
+
+/* Timeline Content */
+.timeline-content {
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 40%;
+}
+
+.timeline-content h3{
+    font-size: 33px;
+    font-family:'Montserrat';
+    font-weight: bold;
+}
+
+.timeline-content p{
+    font-size: 18px;
+    font-family:'Open Sans' ;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: 900px;
+    border-top-left-radius: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: 150px;
+    border-top-right-radius: 0;
+}
+
+
+.timeline-date {
+    font-size: 12px;
+    color:black;
+    margin-top: 10px;
+    display: block;
+    font-weight: 200;
+}
+
+#project{
+    background-color:white;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+.col h2{ 
+    text-align: center;
+    font-size: 80px;
+    font-family:'Berkshire Swash';
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+#skills.container {
+    max-width: 900px;
+    margin: auto;
+}
+  
+
+  
+.col-md-4 {
+    max-width: 30%;
+    justify-items: center;
+}
+  
+.mb-3 {
+    margin-bottom: 20px;
+}
+  
+
+.progress {
+    text-align: center;
+    height: 200px;
+    background:none
+}
+
+.col-md-4 h4{
+    margin-top: 18px;
+    font-family: 'Montserrat';
+    font-size: 25px;
+    text-transform: uppercase;
+}
+  
+.circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(
+        #FC72A5 calc(var(--percent) * 1%),
+        #fcd0de 0
+    );
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: progress-animation 2s ease-out;
+}
+  
+.inner-circle {
+    width: 85%;
+    height: 85%;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.number {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+  
+h4 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+#project{
+    background:linear-gradient(#d9eaf1,#E7F6F9);;
+    padding: 30px 20px 50px 30px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px; 
+}
+
+#project .container{
+    margin-left: 150px;
+    margin-right: 80px;
+
+}
+
+.card-title{
+    font-family: 'Montserrat';
+}
+
+.card button {
+    background: linear-gradient(#FEC2D6, #F99DBC, #FC72A5);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease; 
+}
+
+.card button:hover {
+    background: linear-gradient(#FC72A5, #F99DBC, #FEC2D6);
+}
+
+
+.btn{
+    background: linear-gradient(#FEC2D6, #F99DBC, #FC72A5);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease; 
+}  
+
+.btn:hover{
+    background: linear-gradient(#FC72A5, #F99DBC, #FEC2D6);
+}
+
+#contact {
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0); 
+    padding: 50px 0; 
+    text-align: center;
+}
+
+
+form {
+    background-color:#ffffff; 
+    padding: 20px;
+    border-radius: 15px; 
+    width:500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Gaya input dan textarea */
+input, textarea {
+    background-color: #9175a5; /* Warna latar belakang input */
+    color: white; /* Warna teks */
+    border: none; /* Hapus border default */
+    border-radius: 15px; /* Sudut membulat */
+    padding: 10px;
+    width: 100%; /* Lebar penuh */
+    margin-bottom: 15px; /* Spasi bawah */
+}
+
+/* Fokus pada input dan textarea */
+input:focus, textarea:focus {
+    outline: none; /* Hapus garis fokus default */
+    box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.5); /* Highlight fokus */
+}
+
+/* Gaya tombol */
+.btn {
+    background-color: #fc728c; 
+    color: white; 
+    border: none; 
+    border-radius: 15px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Hover pada tombol */
+.btn:hover {
+    background-color: #f99cbc; /* Warna saat hover */
+}
+
+#contact .container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#contact form {
+    background: #E7F6F9; /* Warna latar belakang form */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Form responsif */
+    width: 500px;
+}
+
+
+
+#contact h2 {
+    text-align: center;
+    font-size: 120px;
+    font-family:'Berkshire Swash';
+    padding: 20px 20px 0px 20px;
+    margin-bottom: 0px;
+    margin-left: 100px;
+}
+
+
+form .btn {
+    background: linear-gradient(to right, #f78ca0, #f9748f);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+form .btn:hover {
+    background: linear-gradient(to right, #f9748f, #f78ca0);
+    opacity: 0.8;
+}
+
+
+
+  /* Animation */
+
+@keyframes scroll{
+    from{
+        opacity: 0;
+        scale:0.5;
+    }
+    to{
+        opacity: 1;
+        scale:1;
+    }
+}
+
+#about{
+    animation: scroll linear ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 60%;
+}
+
+#education{
+    animation: scroll linear ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+#skills{
+    animation: scroll linear ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 60%;
+}
+
+#project{
+    animation: scroll linear ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 60%;
+}
+
+#contact{
+    animation: scroll linear ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 60%;
+}
+
+@keyframes progress-animation {
+    from {
+      background: conic-gradient(#FC72A5 0%, #ddd 0%);
+    }
+    to {
+      background: conic-gradient(
+        #FC72A5  calc(var(--percent) * 1%),
+        #fcd0de 0
+      );
+    }
+}
+  
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes LineAnimated{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 65%;
+    }
+}
