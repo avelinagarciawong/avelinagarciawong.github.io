@@ -1,12 +1,14 @@
+body {
+    font-family:'Montserrat','Berkshire Swash','Open Sans',;
+}
 .bg-pink {
     background:linear-gradient(#d9eaf1,#E7F6F9);
 }
 
-
 .navbar .container {
     margin-left: 50px;
-    margin-right: 50px; 
-  }
+    margin-right: 40px; 
+}
 
 body {
     font-family:'Montserrat','Berkshire Swash',;
@@ -17,7 +19,8 @@ body {
 }
 
 .navbar-nav .nav-item {
-    margin: 0 15px;
+    margin: 0 10px;
+    font-size: 15px;
 }
 
 .navbar-nav .nav-link {
@@ -28,22 +31,11 @@ body {
     margin-left: 650px; 
 }
 
-h2{
-    font-weight: bolder;
-    color:p;
-}
-
-.btn-pink{
-    background-color: palevioletred;
-    color: white;
-}
-
-
 .landing {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 99vh;
     background-color: #f8f9fa;
 }
 .landing.hidden {
@@ -51,6 +43,10 @@ h2{
 }
 .website-content {
     display: none;
+}
+
+footer.visible{
+    display: block;
 }
 .website-content.visible {
     display: block;
@@ -74,20 +70,32 @@ video.landvid {
     color:#FFA2B8;
 }
 
-.question{
-    color:palevioletred;
+.col h2{ 
+    text-align: center;
+    font-size: 80px;
+    font-family:'Berkshire Swash';
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+
+.col-md-3 h1:nth-child(odd) {
+    color: palevioletred;  /* Warna untuk elemen ganjil */
     font-size: 20px;
     font-family: 'Montserrat';
     text-align: left;
     font-weight: bold;
 }
 
-.display-4{
+.col-md-3 h1:nth-child(even) {
     font-size: 20px;
     font-family: 'Montserrat';
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 10px;  /* Tambahkan jarak bawah untuk elemen genap */
 }
+
 
 .intro{
     width:700px;
@@ -95,10 +103,6 @@ video.landvid {
     margin-bottom: 0px;
 }
 
-#about{
-    margin: 0;
-    background: linear-gradient(#EAF6FF,#C1E5FF,);
-}
 
 
 #education{
@@ -107,13 +111,14 @@ video.landvid {
     text-align: center;
     position: relative;
     margin-bottom: 30px;
+    width:1500px;
 
 }
 
 #education::after{
     content: "";
     position: absolute;
-    left: 870px;
+    left: 700px;
     transform: translateX(-50%); 
     margin-top: 200px;
     top: 0; 
@@ -123,49 +128,32 @@ video.landvid {
     border-radius: 50px;
     animation:LineAnimated 5s linear forwards;
 }
-
-.educationtime{
-    text-align: center;
-    font-size: 80px;
-    font-family:'Berkshire Swash';
-    padding: 20px 20px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-* Timeline Container */
 .timeline {
     position: relative;
-    max-width: 800px; 
-    margin: 0 auto;
+    max-width: 1200px; 
+    margin: 0 100px;
     padding: 0 20px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 0;
-    z-index: 1;
 }
 
-
-/* Timeline Item */
 .timeline-item {
-    justify-content: flex-start;
-    margin-bottom: 30px;
+    width:400px;
+    margin-bottom: 20px;
     position: relative;
-    opacity: 0;
-    transform: translateX(-30px);
-    animation: fadeIn 0.6s ease-in forwards;
 }
 
-.timeline-item:nth-child(even) {
-    justify-content: flex-end;
-    transform: translateX(30px);
+.timeline-date {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+    font-family: 'Open Sans';
 }
 
 .timeline-item:nth-child(even)::before {
     content: "";
     position: absolute;
-    left: 850px;
+    left: 560px;
     transform: translateX(-50%);
     top: 0; 
     width: 30px;
@@ -178,7 +166,7 @@ video.landvid {
 .timeline-item:nth-child(odd)::before {
     content: "";
     position: absolute;
-    left: 850px; 
+    left: 560px; 
     transform: translateX(-50%); 
     top: 0; 
     width: 30px;
@@ -188,14 +176,12 @@ video.landvid {
 }
 
 
-/* Timeline Content */
 .timeline-content {
     padding: 20px;
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-    width: 40%;
+    width: 400px;
 }
 
 .timeline-content h3{
@@ -210,12 +196,12 @@ video.landvid {
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
-    margin-left: 900px;
+    margin-left: 600px;
     border-top-left-radius: 0;
 }
 
 .timeline-item:nth-child(even) .timeline-content {
-    margin-left: 150px;
+    margin-left:100px;
     border-top-right-radius: 0;
 }
 
@@ -234,24 +220,15 @@ video.landvid {
     text-align: center;
     position: relative;
     margin-bottom: 30px;
+    width:1500px;
 
 }
 
-.col h2{ 
-    text-align: center;
-    font-size: 80px;
-    font-family:'Berkshire Swash';
-    padding: 20px 20px 0px 20px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
 
 #skills.container {
     max-width: 900px;
     margin: auto;
 }
-  
 
   
 .col-md-4 {
@@ -325,9 +302,22 @@ h4 {
 }
 
 #project .container{
-    margin-left: 150px;
-    margin-right: 80px;
+    margin-left: 3px;
+    margin-right: 8px;
+    padding-left: 5px;
 
+}
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    flex-grow: 1;
+}
+
+.card-body p {
+    margin-bottom: 15px; 
 }
 
 .card-title{
@@ -341,6 +331,8 @@ h4 {
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    margin-top: auto; 
+    align-self: center; 
     transition: background 0.3s ease; 
 }
 
@@ -485,19 +477,32 @@ form .btn:hover {
 #skills{
     animation: scroll linear ;
     animation-timeline: view();
-    animation-range: entry 0% cover 60%;
+    animation-range: entry 0% cover 50%;
 }
 
 #project{
     animation: scroll linear ;
     animation-timeline: view();
-    animation-range: entry 0% cover 60%;
+    animation-range: entry 0% cover 30%;
 }
 
 #contact{
     animation: scroll linear ;
     animation-timeline: view();
     animation-range: entry 0% cover 60%;
+}
+
+.hidden-footer {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s ease-in-out;
+}
+
+#mainContent:target ~ .hidden-footer,
+#mainContent.visible ~ .hidden-footer {
+  visibility: visible;
+  opacity: 1;
+  position: static; /* memastikan kembali ke posisi normal */
 }
 
 @keyframes progress-animation {
