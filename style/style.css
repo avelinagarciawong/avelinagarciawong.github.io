@@ -10,12 +10,15 @@ body {
     margin-right: 40px; 
 }
 
-body {
-    font-family:'Montserrat','Berkshire Swash',;
-}
 
 .navbar-brand{
-    margin-left:50px;
+    font-style:'Montserrat';
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.navbar-brand img{
+    margin-left: 0px;
 }
 
 .navbar-nav .nav-item {
@@ -305,10 +308,7 @@ h4 {
     margin-left: 3px;
     margin-right: 8px;
     padding-left: 5px;
-
 }
-
-
 .card-body {
     display: flex;
     flex-direction: column;
@@ -337,21 +337,6 @@ h4 {
 }
 
 .card button:hover {
-    background: linear-gradient(#FC72A5, #F99DBC, #FEC2D6);
-}
-
-
-.btn{
-    background: linear-gradient(#FEC2D6, #F99DBC, #FC72A5);
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background 0.3s ease; 
-}  
-
-.btn:hover{
     background: linear-gradient(#FC72A5, #F99DBC, #FEC2D6);
 }
 
@@ -447,7 +432,9 @@ form .btn:hover {
     opacity: 0.8;
 }
 
-
+.col-md-6 {
+    margin-left: 30px;
+}
 
   /* Animation */
 

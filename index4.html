@@ -7,19 +7,19 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/style2.css">
+    <link rel="stylesheet" href="style/style4.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Chango&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
-    <title>Online President Election</title>
+    <title>ICTIIA 2024</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-blue navbar-dark shadow-sm fixed-top" smargin-bottom="20">
         <div class="container">
           <a class="navbar-brand text-dark" href="index.html">
-            <img src="gambar/icon.png" alt="icon" width="50" height="50" class="ms-2">
-            Online President Election
+            <img src="gambar/icon.png" alt="icon" width="50" height="50"  class="ms-2">
+            ICTIIA 2024
         </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,13 +27,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link text-dark active" aria-current="page" href="#introduction">Introduction</a>
+                <a class="nav-link text-dark active" aria-current="page" href="#introduction">What is Session Chair Assitant?</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-dark" href="#photos">Photos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#view">View My Code</a>
+                <a class="nav-link text-dark" href="#view">View certificate</a>
               </li>
             </ul>
           </div>
@@ -42,65 +42,38 @@
     </nav>
 
     <!-- introduction -->
-    <section id="introduction" style="margin-top: 80px;"> <!-- Tambahkan margin-top agar gambar berada di bawah navbar -->
-        <div class="container">
-            <div class="row justify-content-center align-items-center text-center fs-5">
-                <!-- Kolom untuk gambar -->
-                <div class="col-md-5 d-flex justify-content-center">
-                    <img src="gambar/election.png" alt="pic1" width="500" height="500" style="border-radius: 1.5em;">
-                </div>
-                <!-- Kolom untuk teks -->
-                <div class="col-md-5 d-flex flex-column justify-content-center align-items-center text-center">
-                    <h1>Introduction</h1>
-                    <p>
-                        Online President Election is a system that enables users to participate in voting with features 
-                        for managing users, candidates, and vote counting. The system is divided into two roles: Admin and User.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="introduction" style="margin-top: 80px; margin-bottom: 0px;">
+      <div class="container">
+          <div class="row justify-content-center align-items-center fs-5">
+              <div class="col-md-5 d-flex justify-content-center">
+                  <img src="gambar/gambar5.jpg" alt="pic1" style="width: 100%; height: auto; margin-right: 30px;border-radius: 1.5em;">
+              </div>
+              <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
+                  <h1>What is Session Chair Assitant?</h1>
+                  <p>A Session Chair Assistant is a person who helps the session chair (the person leading or moderating a session) during an event, conference, or seminar. Their tasks may include organizing materials, assisting with time management, helping participants with technical issues, ensuring the smooth flow of the session, and taking care of any logistical details. Essentially, they support the chairperson in managing the session effectively.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </section>
+  
 
 
-    <!-- Features -->
-    <section id="features">
+    <!-- photos -->
+    <section id="photos" style="margin-top: 0px;">
         <div class="container">
             <div class="row text-center mb-5">
                 <div class="col">
-                  <h2>Features</h2>
+                  <h2>Photos</h2>
                 </div>
             </div>
             <div class="row justify-content-center">
               <div class="card-group">
                 <article class="card-article">
-                  <img src="gambar/Picture1.png" class="card-img" alt="election">
+                  <img src="gambar/gambar7.jpg" class="card-img" alt="election">
                   <div class="card-data">
-                    <span class="card_description">User Authentication</span>
-                    <h2 class="card-title">Managing system access with login using username and password.Admin users will be directed to the admin menu, while regular users will be directed to the user menu.</h2>
-                  </div>
-                </article>
-
-                <article class="card-article">
-                  <img src="gambar/Picture2.png" class="card-img" alt="election">
-                  <div class="card-data">
-                    <span class="card_description">Voting System</span>
-                    <h2 class="card-title">Allowing users to vote for one of the available candidates.If the user has already voted, the system will display their previous choice, and the user will not be allowed to vote again.</h2>
-                  </div>
-                </article>
-
-                <article class="card-article">
-                  <img src="gambar/Picture3.png" class="card-img" alt="election">
-                  <div class="card-data">
-                    <span class="card_description">Quick Count / Voting Results</span>
-                    <h2 class="card-title">Display the current vote count for each candidate.</h2>
-                  </div>
-                </article>
-                
-                <article class="card-article">
-                  <img src="gambar/Picture5.png" class="card-img" alt="election">
-                  <div class="card-data">
-                    <span class="card_description">Candidate Management</span>
-                    <h2 class="card-title">Allow admin to add,remove,and modify candidate</h2>
+                    <span class="card_description">Toba Room</span>
+                    <h2 class="card-title">Each presenter present their paper and take a picture together.</h2>
                   </div>
                 </article>
               </div>
@@ -108,17 +81,17 @@
         </div>
     </section>
 
-    <!-- view my code -->
-    <section id="view">
-      <div class="container">
-        <div class="row text-center mb-5">
-          <div class="col">
-            <h2>View My code</h2>
-            <button type="button" onclick="window.location.href='https://uph365-my.sharepoint.com/:f:/g/personal/03081230014_student_uph_edu/EngjthDiR5BJlgpm1Km-k3cBe5Uf0xIpyMsacAd-aiHqPg'"> Check here</button>
-          </div>
+   <!-- view my code -->
+   <section id="view">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col">
+          <h2>View My Certificate</h2>
+          <button type="button" onclick="window.location.href='https://uph365-my.sharepoint.com/:b:/g/personal/03081230014_student_uph_edu/Ef6YziGVXs1Eltv5ZRs1u2oBYOmZF8onGl_mBYsKgkNsUw'"> Check here</button>
         </div>
       </div>
-
+    </div>
+  
     <!-- Footer -->
     <footer class="bg-blue text-dark py-3">
       <div class="container d-flex justify-content-between align-items-center">
