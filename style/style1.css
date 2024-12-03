@@ -1,0 +1,34 @@
+body {
+    font-family:'Montserrat','Berkshire Swash','Open Sans',;
+}
+.bg-pink {
+    background:linear-gradient(#d9eaf1,#E7F6F9);
+}
+.navbar .container {
+    margin-left: 50px;
+    margin-right: 40px; 
+}
+
+
+.navbar-brand{
+    font-style:'Montserrat';
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.navbar-brand img{
+    margin-left: 0px;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+.navbar-nav .nav-link {
+    padding: 5px 0;
+}
+
+.navbar-nav {
+    margin-left: 650px; 
+}
