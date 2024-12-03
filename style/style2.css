@@ -40,8 +40,10 @@ body {
 #features.row{
     display: grid;
     place-items: center;
-    margin-inline: 1.5rem;
-    padding-block: 5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .card-group{
@@ -63,6 +65,7 @@ body {
 
 .card-data{
     width: 400px;
+    height: 180px;
     background-color: white;
     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);

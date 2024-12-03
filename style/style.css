@@ -24,11 +24,9 @@ body {
 .navbar-nav .nav-item {
     margin: 0 10px;
     font-size: 15px;
-}
-
-.navbar-nav .nav-link {
     padding: 5px 0;
 }
+
 
 .navbar-nav {
     margin-left: 650px; 
@@ -39,13 +37,6 @@ body {
     height: 250px; 
     object-fit: cover;
     border-top: 5px solid pink;
-}
-
-.lead{
-    margin-top: 20px;
-    font-weight: bold;
-    font-family:'Open Sans';
-    color:#FFA2B8;
 }
 
 .col h2{ 
@@ -60,7 +51,7 @@ body {
 
 
 .col-md-3 h1:nth-child(odd) {
-    color: palevioletred;  /* Warna untuk elemen ganjil */
+    color: palevioletred;  
     font-size: 20px;
     font-family: 'Montserrat';
     text-align: left;
@@ -73,14 +64,6 @@ body {
     text-align: left;
     margin-bottom: 10px;  /* Tambahkan jarak bawah untuk elemen genap */
 }
-
-
-.intro{
-    width:700px;
-    margin-top: 30px;
-    margin-bottom: 0px;
-}
-
 
 
 #education{
@@ -97,7 +80,7 @@ body {
     content: "";
     position: absolute;
     left: 700px;
-    transform: translateX(-50%); 
+    transform: translateX(-30%); 
     margin-top: 200px;
     top: 0; 
     height: 65%;
@@ -128,7 +111,7 @@ body {
     font-family: 'Open Sans';
 }
 
-.timeline-item:nth-child(even)::before {
+.timeline-item::before {
     content: "";
     position: absolute;
     left: 560px;
@@ -140,19 +123,6 @@ body {
     border-radius: 50%; 
 
 }
-
-.timeline-item:nth-child(odd)::before {
-    content: "";
-    position: absolute;
-    left: 560px; 
-    transform: translateX(-50%); 
-    top: 0; 
-    width: 30px;
-    height: 30px;
-    background:linear-gradient( #FC72A5,#F99DBC,#FEC2D6); 
-    border-radius: 50%; 
-}
-
 
 .timeline-content {
     padding: 20px;
@@ -173,6 +143,7 @@ body {
     font-family:'Open Sans' ;
 }
 
+
 .timeline-item:nth-child(odd) .timeline-content {
     margin-left: 600px;
     border-top-left-radius: 0;
@@ -191,17 +162,6 @@ body {
     display: block;
     font-weight: 200;
 }
-
-#project{
-    background-color:white;
-    padding: 30px 20px;
-    text-align: center;
-    position: relative;
-    margin-bottom: 30px;
-    width:1500px;
-
-}
-
 
 #skills.container {
     max-width: 900px;
@@ -244,7 +204,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: progress-animation 2s ease-out;
+    animation: progress-animation 8s ease-out;
 }
   
 .inner-circle {
@@ -276,13 +236,13 @@ h4 {
     padding: 30px 20px 50px 30px;
     text-align: center;
     position: relative;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
+    width:1500px;
 }
 
 #project .container{
-    margin-left: 3px;
+    margin-left: 8px;
     margin-right: 8px;
-    padding-left: 5px;
 }
 .card-body {
     display: flex;
@@ -323,45 +283,20 @@ h4 {
 }
 
 
-form {
-    background-color:#ffffff; 
-    padding: 20px;
-    border-radius: 15px; 
-    width:500px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-}
-
-/* Gaya input dan textarea */
 input, textarea {
-    background-color: #9175a5; /* Warna latar belakang input */
-    color: white; /* Warna teks */
-    border: none; /* Hapus border default */
-    border-radius: 15px; /* Sudut membulat */
-    padding: 10px;
-    width: 100%; /* Lebar penuh */
-    margin-bottom: 15px; /* Spasi bawah */
-}
-
-/* Fokus pada input dan textarea */
-input:focus, textarea:focus {
-    outline: none; /* Hapus garis fokus default */
-    box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.5); /* Highlight fokus */
-}
-
-/* Gaya tombol */
-.btn {
-    background-color: #fc728c; 
+    background-color: #d3d192; 
     color: white; 
     border: none; 
     border-radius: 15px; 
-    padding: 10px 20px; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
+    padding: 10px;
+    width: 100%; 
+    margin-bottom: 15px; 
 }
 
-/* Hover pada tombol */
-.btn:hover {
-    background-color: #f99cbc; /* Warna saat hover */
+
+input:focus, textarea:focus {
+    outline: none; 
+    box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.5); 
 }
 
 #contact .container {
@@ -373,14 +308,13 @@ input:focus, textarea:focus {
 }
 
 #contact form {
-    background: #E7F6F9; /* Warna latar belakang form */
+    background: #E7F6F9; 
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Form responsif */
+    width: 100%; 
     width: 500px;
 }
-
 
 
 #contact h2 {
@@ -411,7 +345,7 @@ form .btn:hover {
     margin-left: 30px;
 }
 
-  /* Animation */
+
 
 @keyframes scroll{
     from{
@@ -454,11 +388,7 @@ form .btn:hover {
     animation-range: entry 0% cover 60%;
 }
 
-.hidden-footer {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0.5s, opacity 0.5s ease-in-out;
-}
+
 
 #mainContent:target ~ .hidden-footer,
 #mainContent.visible ~ .hidden-footer {

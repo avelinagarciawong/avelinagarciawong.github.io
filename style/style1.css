@@ -9,7 +9,6 @@ body {
     margin-right: 40px; 
 }
 
-
 .navbar-brand{
     font-style:'Montserrat';
     font-weight: bold;
@@ -20,15 +19,41 @@ body {
     margin-left: 0px;
 }
 
-.navbar-nav .nav-item {
-    margin: 0 10px;
-    font-size: 15px;
+.navbar-nav {
+    margin-left: 650px; 
 }
 
-.navbar-nav .nav-link {
+.navbar-nav .nav-item {
+    margin: 0 10px;
+    /* 0:top and buttom
+    10:left and right */
+    font-size: 15px;
     padding: 5px 0;
 }
 
-.navbar-nav {
-    margin-left: 650px; 
+
+body{
+    animation: fadeOut 5s forwards;
+    animation-delay: 10s;
+}
+
+@keyframes fadeOut{
+    0% {opacity:1;}
+    100%{opacity:0;}
+}
+
+.videobg {
+position: relative;
+width: 100%; 
+height: 100%; 
+display: flex;
+justify-content: center; 
+align-items: center; 
+overflow: hidden;
+ 
+}
+
+.vidback {
+width: 100%; 
+height: 100%; 
 }
